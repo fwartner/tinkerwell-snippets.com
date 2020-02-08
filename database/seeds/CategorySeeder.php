@@ -12,7 +12,7 @@ class CategorySeeder extends Seeder
     public function run()
     {
         $categories = [
-            'Laravel', 'Lumen', 'Kirby', 'Moodle', 'Infection', 'OctoberCMS', 'PrestaShop', 'Statamic', 'Wordpress'
+            'Vanilla PHP', 'Laravel', 'Lumen', 'Kirby', 'Moodle', 'Infection', 'OctoberCMS', 'PrestaShop', 'Statamic', 'Wordpress'
         ];
 
         collect($categories)->each(function ($item) {

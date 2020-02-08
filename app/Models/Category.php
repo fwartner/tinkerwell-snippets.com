@@ -39,4 +39,12 @@ class Category extends Model
     protected $casts = [
         'is_active' => 'boolean'
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function snippets()
+    {
+        return $this->hasMany(Snippet::class, 'category_id', 'id');
+    }
 }

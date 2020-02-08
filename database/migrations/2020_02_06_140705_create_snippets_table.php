@@ -17,6 +17,7 @@ class CreateSnippetsTable extends Migration
             $table->bigIncrements('id');
 
             $table->unsignedInteger('user_id');
+            $table->unsignedInteger('category_id');
 
             $table->string('title');
             $table->string('slug')->unique();

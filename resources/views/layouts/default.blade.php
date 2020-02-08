@@ -11,7 +11,7 @@
 
     <title>@yield('page_title') - {{ config('app.name') }}</title>
 
-    <script src="https://kit.fontawesome.com/1aad535f8f.js" crossorigin="anonymous"></script>
+{{--    <script src="https://kit.fontawesome.com/1aad535f8f.js" crossorigin="anonymous"></script>--}}
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
