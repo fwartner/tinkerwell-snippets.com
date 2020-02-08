@@ -7,6 +7,12 @@
         "laravel"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "require": {
         "php": "^7.2",
         "ext-json": "*",
@@ -15,6 +21,7 @@
         "laravel/framework": "^6.2",
         "laravel/helpers": "^1.1",
         "laravel/horizon": "^3.6",
+        "laravel/nova": "^2.10",
         "laravel/passport": "^8.3",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.1",

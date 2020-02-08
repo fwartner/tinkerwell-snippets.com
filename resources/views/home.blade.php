@@ -1,8 +1,20 @@
-@extends('layouts.app')
+@extends('layouts.default')
+
+@section('page_title')
+    Dashboard
+@endsection
+
+@push('header_styles')
+
+@endpush
+
+@push('header_scripts')
+
+@endpush
 
 @section('content')
-    <div class="flex items-center">
-        <div class="md:w-1/2 md:mx-auto">
+    <div class="flex items-center py-10">
+        <div class="md:w-1/2 d md:mx-auto">
 
             @if (session('status'))
                 <div class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100 px-3 py-4 mb-4" role="alert">
@@ -25,3 +37,7 @@
         </div>
     </div>
 @endsection
+
+@push('footer_scripts')
+
+@endpush

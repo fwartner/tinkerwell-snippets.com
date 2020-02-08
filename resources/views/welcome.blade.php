@@ -63,7 +63,7 @@
 
                 <div class="w-full flex flex-col justify-center items-center">
                     <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded mx-2 text-center">
-                        See All Snippets (Soon)
+                        See All Snippets
                     </a>
                 </div>
         </div>
