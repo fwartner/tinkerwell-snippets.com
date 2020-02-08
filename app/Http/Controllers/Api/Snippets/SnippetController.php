@@ -16,7 +16,11 @@ class SnippetController extends Controller
      */
     public function index()
     {
-        $snippets = Snippet::all();
+        if (\request()->query->has('forUser')) {
+            $snippets = Snippet::where('user_id', auth()->guard('api')->id)->get();
+        } else {
+            $snippets = Snippet::all();
+        }
 
         return SnippetResource::collection($snippets);
     }
@@ -25,11 +29,18 @@ class SnippetController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return SnippetResource|\Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $snippet = auth()->guard('api')->user()->snippets()->create([
+            'title' => $request->get('title'),
+            'slug' => str_slug($request->get('title'), '-'),
+            'description' => $request->get('description'),
+            'snippet' => $request->get('snippet'),
+        ]);
+
+        return SnippetResource::make($snippet);
     }
 
     /**

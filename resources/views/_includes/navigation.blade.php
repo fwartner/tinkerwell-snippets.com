@@ -12,7 +12,7 @@
         </div>
         <div class="flex items-center justify-between py-2 text-white h-12">
             <div class="lg:flex-grow mr-4 flex justify-end text-sm md:text-base">
-                <a href="#latest-snippets" class="hover:text-gray-500 mr-4">Latest Snippets</a>
+                <a href="/#latest-snippets" class="hover:text-gray-500 mr-4">Latest Snippets</a>
                 <a href="https://github.com/fwartner/laravel-tinkerwell-snippets" class="hover:text-gray-500 mr-4">Helper Package</a>
             </div>
             <div>
