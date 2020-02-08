@@ -15,7 +15,7 @@ class CategorySeeder extends Seeder
             'Laravel', 'Lumen', 'Kirby', 'Moodle', 'Infection', 'OctoberCMS', 'PrestaShop', 'Statamic', 'Wordpress'
         ];
 
-        collect($categories)->each(function($item) {
+        collect($categories)->each(function ($item) {
             \App\Models\Category::create([
                 'title' => $item,
                 'slug' => str_slug($item, '-')
