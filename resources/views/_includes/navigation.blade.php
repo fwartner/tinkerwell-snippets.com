@@ -12,8 +12,13 @@
         </div>
         <div class="flex items-center justify-between py-2 text-white h-12">
             <div class="lg:flex-grow mr-4 flex justify-end text-sm md:text-base">
-                <a href="/#latest-snippets" class="hover:text-gray-500 mr-4">Latest Snippets</a>
-                <a href="https://github.com/fwartner/laravel-tinkerwell-snippets" class="hover:text-gray-500 mr-4">Helper Package</a>
+                @guest
+                    <a href="/#latest-snippets" class="hover:text-gray-500 mr-4">Latest Snippets</a>
+                    <a href="https://github.com/fwartner/laravel-tinkerwell-snippets" class="hover:text-gray-500 mr-4">Helper Package</a>
+                    @else
+                    <a href="{{ url('/home') }}" class="hover:text-gray-500 mr-4">Dashboard</a>
+                    <a href="{{ route('snippets.create') }}" class="hover:text-gray-500 mr-4">Create New Snippet</a>
+                @endguest
             </div>
             <div>
                 @guest
@@ -22,8 +27,6 @@
                         <a class="hover:text-gray-500 mr-4" href="{{ route('register') }}">{{ __('Register') }}</a>
                     @endif
                 @else
-                    <span class="text-gray-300 text-sm pr-4">{{ Auth::user()->name }}</span>
-
                     <a href="{{ route('logout') }}"
                        class="hover:text-gray-500 mr-4"
                        onclick="event.preventDefault();

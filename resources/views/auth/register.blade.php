@@ -30,7 +30,7 @@
                                 {{ __('Name') }}:
                             </label>
 
-                            <input id="name" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('name')  border-red-500 @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            <input id="name" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('name')  border-red-500 @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="John Doe">
 
                             @error('name')
                             <p class="text-red-500 text-xs italic mt-4">
@@ -44,7 +44,7 @@
                                 {{ __('E-Mail Address') }}:
                             </label>
 
-                            <input id="email" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <input id="email" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="john.doe@example.com">
 
                             @error('email')
                             <p class="text-red-500 text-xs italic mt-4">
@@ -58,7 +58,7 @@
                                 {{ __('Password') }}:
                             </label>
 
-                            <input id="password" type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('password') border-red-500 @enderror" name="password" required autocomplete="new-password">
+                            <input id="password" type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('password') border-red-500 @enderror" name="password" required autocomplete="new-password" placeholder="SuperSecretPassword">
 
                             @error('password')
                             <p class="text-red-500 text-xs italic mt-4">
@@ -72,7 +72,33 @@
                                 {{ __('Confirm Password') }}:
                             </label>
 
-                            <input id="password-confirm" type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password-confirm" type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password_confirmation" required autocomplete="new-password" placeholder="SuperSecretPassword">
+                        </div>
+
+                        <div class="flex flex-wrap mb-6">
+                            <label for="twitter_url" class="block text-gray-700 text-sm font-bold mb-2">
+                                {{ __('Twitter URL') }}:
+                            </label>
+
+                            <input id="twitter_url" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('twitter_url')  border-red-500 @enderror" name="twitter_url" value="{{ old('twitter_url') }}" autocomplete="twitter_url" placeholder="https://twitter.com/tinkerwellapp" autofocus>
+                            @error('twitter_url')
+                                <p class="text-red-500 text-xs italic mt-4">
+                                    {{ $message }}
+                                </p>
+                            @enderror
+                        </div>
+
+                        <div class="flex flex-wrap mb-6">
+                            <label for="github_url" class="block text-gray-700 text-sm font-bold mb-2">
+                                {{ __('GitHub URL') }}:
+                            </label>
+
+                            <input id="github_url" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('github_url')  border-red-500 @enderror" name="github_url" value="{{ old('github_url') }}" autocomplete="github_url" placeholder="https://github.com/tinkerwellapp" autofocus>
+                            @error('github_url')
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
+                            @enderror
                         </div>
 
                         <div class="flex flex-wrap">
