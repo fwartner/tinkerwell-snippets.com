@@ -25,8 +25,7 @@
 </head>
 <body class="font-mono bg-gray-800">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM232NW"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM232NW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div id="app">
         @include('_includes.navigation')
@@ -36,5 +35,19 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
+    <script>
+        (function(d, h, m){
+            var js, fjs = d.getElementsByTagName(h)[0];
+            if (d.getElementById(m)){return;}
+            js = d.createElement(h); js.id = m;
+            js.onload = function(){
+                window.makerWidgetComInit({
+                    position: "left",
+                    widget: "fkzc6jeqad9jgcfl-lfxwc7iwovjmi0vo-rojtbfe0n6xm7ygy"
+                })};
+            js.src = "https://makerwidget.com/js/embed.js";
+            fjs.parentNode.insertBefore(js, fjs)
+        }(document, "script", "dhm"))
+    </script>
 </body>
 </html>
