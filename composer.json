@@ -19,6 +19,7 @@
         "doctrine/dbal": "^2.10",
         "drobee/nova-sluggable": "^1.2",
         "fideloper/proxy": "^4.0",
+        "inspheric/nova-url-field": "^1.4",
         "laravel/framework": "^6.2",
         "laravel/helpers": "^1.1",
         "laravel/horizon": "^3.6",
