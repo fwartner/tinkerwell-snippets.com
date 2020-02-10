@@ -49,5 +49,14 @@
             fjs.parentNode.insertBefore(js, fjs)
         }(document, "script", "dhm"))
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158117011-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158117011-1');
+    </script>
 </body>
 </html>
