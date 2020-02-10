@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6eb6ff4c644e6c29290a684596a7cf3",
+    "content-hash": "6e3b8a672b7b70184f541a2abc3003b4",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -590,6 +590,49 @@
                 "schedule"
             ],
             "time": "2019-03-31T00:38:28+00:00"
+        },
+        {
+            "name": "drobee/nova-sluggable",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drobee/nova-sluggable.git",
+                "reference": "c2bd05aff51511911cf5235c8817622e92095998"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drobee/nova-sluggable/zipball/c2bd05aff51511911cf5235c8817622e92095998",
+                "reference": "c2bd05aff51511911cf5235c8817622e92095998",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.6.*|5.7.*|5.8.*|6.*",
+                "illuminate/support": "5.6.*|5.7.*|5.8.*|6.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Drobee\\NovaSluggable\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drobee\\NovaSluggable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Slug field for Laravel Nova",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2019-10-10T20:50:28+00:00"
         },
         {
             "name": "egulias/email-validator",
