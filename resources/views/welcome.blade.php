@@ -34,7 +34,7 @@
         </div>
 
         <div class="w-full lg:w-1/2 pt-8 lg:pt-0 max-w-3xl">
-            <img src="http://g.recordit.co/kDX1ilYxi7.gif" alt="Tinkerwell Code Example">
+            <img src="{{ asset('/images/snippets.gif') }}" alt="Tinkerwell Code Example">
             <div class="w-full flex items-center mt-4 justify-center">
                 <span class="text-white text-xs mr-2">Tinkerwell is made by </span><a href="https://beyondco.de?ref=tinkerwell-snippets.com" target="_blank">
                     <img class="h-8" src="https://tinkerwell.app/images/beyond-code.png" alt="Beyond Code">
