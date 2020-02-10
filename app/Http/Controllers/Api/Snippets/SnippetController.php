@@ -38,6 +38,7 @@ class SnippetController extends Controller
             'slug' => str_slug($request->get('title'), '-'),
             'description' => $request->get('description'),
             'snippet' => $request->get('snippet'),
+            'category_id' => $request->get('category_id')
         ]);
 
         return SnippetResource::make($snippet);

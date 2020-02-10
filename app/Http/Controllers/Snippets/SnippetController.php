@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Snippets;
 
 use App\Http\Controllers\Controller;
+use App\Models\Snippet;
 use Illuminate\Http\Request;
 
 class SnippetController extends Controller
@@ -51,7 +52,9 @@ class SnippetController extends Controller
      */
     public function show($id)
     {
-        return view('snippets.create', compact('id'));
+        $snippet = Snippet::find($id);
+
+        return view('snippets.show', compact('snippet'));
     }
 
     /**
